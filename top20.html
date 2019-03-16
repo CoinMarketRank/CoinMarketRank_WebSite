@@ -52,23 +52,20 @@ ChatbroLoader({encodedChatId: '02DW9'});
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li><a href="index.html">GLOBAL</a></li>
-                                                        <li class="active"><a href="top20.html">TOP20</a></li>
-                                                        <li><a href="topprice.html">PRICES</a></li>
+							<li><a href="index.html" >GLOBAL</a></li>
+                                                        <li><a href="https://www.coinmarketrank.io/blog/">BLOG</a></li>
+                                                        <li><a href="top20.html" class="active">TOP20</a></li>
+                                                        <li><a href="topprice.html">PRECIOS</a></li>
 							<li><a href="topchange.html">TOP%</a></li>
 							<li><a href="badchange.html">BAD%</a></li>
-                                                        <li><a href="graphs.html">GRAPHS</a></li>
-                                                        <li><a href="graphs.html">ERC20</a></li>
+                                                        <li><a href="graphs.html">GRAFICOS</a></li>
                                                         <li><a href="icos.html">ICOS</a></li>
 						</ul>
 						<ul class="icons">
-							<li><a href="https://steemit.com/@coinmarketrank" class="icon fa-reddit"><span class="label">Steemit</span></a></li>
-                                                        <li><a href="https://medium.com/@coinmarketrank" class="icon fa-medium"><span class="label">Medium</span></a></li>
+							<li><a href="https://medium.com/@coinmarketrank" class="icon fa-medium"><span class="label">Medium</span></a></li>
 							<li><a href="https://twitter.com/coin_rank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 							<li><a href="https://www.youtube.com/channel/UCALYBnaNZqIAy6VOCcTI_-w" class="icon fa-youtube"><span class="label">Youtube</span></a></li>
-							<!--<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>-->
-                                                        <li><a href="https://CoinMarketRank.wordpress.com" class="icon fa-wordpress" target="new"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.coinmarketrank.io/blog/" class="icon fa-wordpress" target="new"><span class="label">Wordpress</span></a></li>
 							<li><a href="https://github.com/CoinMarketRank" class="icon fa-github" target="new"><span class="label">GitHub</span></a></li>
                                                         <li><a href="https://www.linkedin.com/company/coinmarketrank/" class="icon fa-linkedin" target="new"><span class="label">Linkedin</span></a></li>
 						</ul>
@@ -78,7 +75,7 @@ ChatbroLoader({encodedChatId: '02DW9'});
 					<div id="main">
 
 						<!-- Featured Post -->
-							<article class="post featured">
+							<article class="post featured" style="padding: 0 0 0 0">
 								<!--<header class="major">
 									<span class="date">April 25, 2017</span>
 									<h2><a href="#">And this is a<br />
@@ -91,7 +88,32 @@ ChatbroLoader({encodedChatId: '02DW9'});
 								<ul class="actions special">
 									<li><a href="#" class="button large">Full Story</a></li>
 								</ul>-->
-                                                                <iframe width="103%" height="3100px" src="https://jira.coinmarketrank.io/plugins/servlet/eazybi/accounts/3/embed/dashboard/10?embed_token=z3qhffgb2ljq5kd8y9432b43erushx97s425m9jefgudgic0hg3b12xfeeuj" frameborder="0"></iframe>
+                                                                 <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" width="103%" >
+  <div class="tradingview-widget-container__widget" width="103%" ></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+  {
+  "symbols": [
+    {
+      "title": "BTC/USD",
+      "proName": "BITFINEX:BTCUSD"
+    },
+    {
+      "title": "ETH/USD",
+      "proName": "BITFINEX:ETHUSD"
+    },
+    {
+      "title": "EUR/USD",
+      "proName": "FX_IDC:EURUSD"
+    }    
+  ],
+  "locale": "en",
+  "linkPageTemplate": "http://coinmarketrank.io/graphs.html"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+                                                                <iframe width="100%" height="3100px" src="https://jira.coinmarketrank.io/plugins/servlet/eazybi/accounts/3/embed/dashboard/10?embed_token=z3qhffgb2ljq5kd8y9432b43erushx97s425m9jefgudgic0hg3b12xfeeuj" frameborder="0"></iframe>
                                                         </article>
 
 						<!-- Posts -->
@@ -254,14 +276,9 @@ ChatbroLoader({encodedChatId: '02DW9'});
 			<script src="assets/js/main.js"></script>
                         <script>
                 var button = document.createElement("Button");
-                button.onclick = function() {window.location.href="https://coinmarketrank.atlassian.net/servicedesk/customer/portal/1";}
-button.innerHTML = "Get Support!";
+                button.onclick = function() {window.location.href="https://coinmarketrank.io/blog";}
+button.innerHTML = "ULTIMAS NOTICIAS";
 button.style = "top:0;right:-1;position:absolute;z-index: 9999";
-document.body.appendChild(button);    
-                var button = document.createElement("Button");
-                button.onclick = function() {window.location.href="https://coinmarketrank.atlassian.net/projects/DEV/issues/";}
-button.innerHTML = "Development";
-button.style = "top:50px;right:-1;position:absolute;z-index: 9999";
 document.body.appendChild(button);    
                 </script>
 
