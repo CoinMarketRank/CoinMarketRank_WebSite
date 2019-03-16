@@ -51,36 +51,58 @@ ChatbroLoader({encodedChatId: '02DW9'});
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li><a href="index.html">GLOBAL</a></li>
-                                                        <li><a href="top20.html">TOP20</a></li>
-                                                        <li><a href="topprice.html">PRICES</a></li>
-							<li><a href="topchange.html">TOP%</a></li>
-							<li><a href="badchange.html">BAD%</a></li>
-                                                        <li class="active"><a href="graphs.html">GRAPHS</a></li>
-                                                        <li><a href="graphs.html">ERC20</a></li>
+							<li><a href="index.html" >GLOBAL</a></li>
+                                                        <li><a href="https://www.coinmarketrank.io/blog/">BLOG</a></li>
+                                                        <li><a href="top20.html" >TOP20</a></li>
+                                                        <li><a href="topprice.html" >PRECIOS</a></li>
+							<li><a href="topchange.html" >TOP%</a></li>
+							<li><a href="badchange.html" >BAD%</a></li>
+                                                        <li><a href="graphs.html" class="active">GRAFICOS</a></li>
                                                         <li><a href="icos.html">ICOS</a></li>
 						</ul>
 						<ul class="icons">
-							<li><a href="https://steemit.com/@coinmarketrank" class="icon fa-reddit"><span class="label">Steemit</span></a></li>
-                                                        <li><a href="https://medium.com/@coinmarketrank" class="icon fa-medium"><span class="label">Medium</span></a></li>
+							<li><a href="https://medium.com/@coinmarketrank" class="icon fa-medium"><span class="label">Medium</span></a></li>
 							<li><a href="https://twitter.com/coin_rank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 							<li><a href="https://www.youtube.com/channel/UCALYBnaNZqIAy6VOCcTI_-w" class="icon fa-youtube"><span class="label">Youtube</span></a></li>
-							<!--<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>-->
-                                                        <li><a href="https://CoinMarketRank.wordpress.com" class="icon fa-wordpress" target="new"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.coinmarketrank.io/blog/" class="icon fa-wordpress" target="new"><span class="label">Wordpress</span></a></li>
 							<li><a href="https://github.com/CoinMarketRank" class="icon fa-github" target="new"><span class="label">GitHub</span></a></li>
                                                         <li><a href="https://www.linkedin.com/company/coinmarketrank/" class="icon fa-linkedin" target="new"><span class="label">Linkedin</span></a></li>
 						</ul>
 					</nav>
 				<!-- Main -->
-					<div id="main">
+					<!--<div id="main">-->
+             <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" width="100%" >
+  <div class="tradingview-widget-container__widget" width="100%" ></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+    {
+  "symbols": [
+    {
+      "title": "BTC/USD",
+      "proName": "BITFINEX:BTCUSD"
+    },
+    {
+      "title": "ETH/USD",
+      "proName": "BITFINEX:ETHUSD"
+    },
+    {
+      "title": "EUR/USD",
+      "proName": "FX_IDC:EURUSD"
+    }    
+  ],
+  "locale": "en",
+  "linkPageTemplate": "http://coinmarketrank.io/graphs.html"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
          <iframe width="100%" height="481" src="https://jira.coinmarketrank.io/plugins/servlet/eazybi/accounts/4/embed/report/50?embed_token=gsgm2pvqoy5zi58uv1rtldau2g9qedvn0oucjegigu4orohmd13g1gvlgyg5" frameborder="0"></iframe>
          <iframe width="100%" height="481" src="https://jira.coinmarketrank.io/plugins/servlet/eazybi/accounts/4/embed/report/52?embed_token=dbgf7j4ilu5q43g16axf15cyzhdpjvtrpmt7c8bihg702nxkvbolv4kmjhvd" frameborder="0"></iframe>
          <iframe width="100%" height="481" src="https://jira.coinmarketrank.io/plugins/servlet/eazybi/accounts/4/embed/report/54?embed_token=yk4z504jz7glt62tkx72b2ubjx8hew3282pdl5ovfpeamx8x3jiwlbtew6gk" frameborder="0"></iframe>
          <iframe width="100%" height="481" src="https://jira.coinmarketrank.io/plugins/servlet/eazybi/accounts/4/embed/report/56?embed_token=jltig1mja6ka8g0lbky82r0i0js4yh4nyq1psy0a5k8sixnqqgp06sl23tcb" frameborder="0"></iframe>
          <iframe width="100%" height="481" src="https://jira.coinmarketrank.io/plugins/servlet/eazybi/accounts/4/embed/report/58?embed_token=7rcoo1vx5a5s35g1ldo3b4l74a3zympt8ilomfr6c4h40y8lmwgb76xv35u0" frameborder="0"></iframe>
          
-         <br><a href="graphs3.html"><b>GO TO NEXT PAGE!</b></a><br><br>
+         <br><div style="background-color:white;"><a href="graphs3.html"><b>GO TO NEXT PAGE!</b></a></div><br><br>
          						<!-- Featured Post -->
 							<!--<article class="post featured">
 								<!--<header class="major">
@@ -190,7 +212,7 @@ ChatbroLoader({encodedChatId: '02DW9'});
 							</footer> 
                                                         -->
 
-					</div>
+					<!--</div>-->
 
 				<!-- Footer -->
 				<!--	<footer id="footer">
@@ -258,10 +280,10 @@ ChatbroLoader({encodedChatId: '02DW9'});
 			<script src="../assets/js/main.js"></script>
                         <script>
                 var button = document.createElement("Button");
-                button.onclick = function() {window.location.href="https://coinmarketrank.atlassian.net/servicedesk/customer/portal/1";}
-button.innerHTML = "Get Support!";
+                button.onclick = function() {window.location.href="https://coinmarketrank.io/blog";}
+button.innerHTML = "ULTIMAS NOTICIAS";
 button.style = "top:0;right:-1;position:absolute;z-index: 9999";
-document.body.appendChild(button);    
+document.body.appendChild(button);   
                 </script>
 
 	</body>
