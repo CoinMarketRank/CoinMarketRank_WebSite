@@ -274,14 +274,33 @@ ChatbroLoader({encodedChatId: '02DW9'});
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-                        <script>
+                        <!--<script>
                 var button = document.createElement("Button");
                 button.onclick = function() {window.location.href="https://coinmarketrank.io/blog";}
 button.innerHTML = "ULTIMAS NOTICIAS";
 button.style = "top:0;right:-1;position:absolute;z-index: 9999";
 document.body.appendChild(button);    
                 
-                </script>
+                </script>-->
+                <dd style = "top:0;right:-1;position:absolute;z-index: 9999">
+<!-- This line should go where you want to put your button -->
+    <button onclick='window.location.href="https://coinmarketrank.io/blog";'>ULTIMAS NOTICIAS</button><br>
+<div class="money-button"
+  data-to="8986"
+  data-amount=""
+  data-currency="EUR"
+  data-label="Donar"
+  data-client-identifier="a1291c20c1ee392504a84dd296b71846"
+  data-button-id="1564760808656"
+  data-button-data="{'ID':'COINMARKETRANK'}"
+  data-type="buy",
+  data-editable="true",
+  data-disabled="false",
+  data-dev-mode="false"
+></div>
+<!-- This line can go anywhere -->
+<script src="https://www.moneybutton.com/moneybutton.js"></script>
+</dd>
 
 	</body>
 </html>
